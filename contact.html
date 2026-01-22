@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Travis Williams | Product Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      .gradient-text {
+        background: linear-gradient(135deg, #1e40af, #3b82f6, #60a5fa);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px rgba(30, 64, 175, 0.1);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50">
+    <nav class="bg-white border-b border-slate-200 fixed w-full z-50">
+      <div class="max-w-6xl mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <span class="text-xl font-bold gradient-text">Travis Williams</span>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="index.html"
+              class="text-slate-600 hover:text-blue-600 transition-colors"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-slate-600 hover:text-blue-600 transition-colors"
+              >About</a
+            >
+            <a
+              href="experience.html"
+              class="text-slate-600 hover:text-blue-600 transition-colors"
+              >Experience</a
+            >
+            <a
+              href="skills.html"
+              class="text-slate-600 hover:text-blue-600 transition-colors"
+              >Skills</a
+            >
+            <a
+              href="leadership.html"
+              class="text-slate-600 hover:text-blue-600 transition-colors"
+              >Leadership</a
+            >
+            <a href="contact.html" class="text-blue-600 font-medium">Contact</a>
+          </div>
+          <div class="md:hidden">
+            <button class="text-slate-600">
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-12 text-center gradient-text">
+          Let's Connect
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-12 mb-16">
+          <div>
+            <p class="text-xl text-slate-600 mb-8 leading-relaxed">
+              I'm always interested in discussing new opportunities and
+              challenges in AI, data analytics, and product management. Let's
+              connect to explore how my expertise can drive value for your
+              organization.
+            </p>
+
+            <div class="space-y-6">
+              <div class="card-hover bg-slate-50 p-6 rounded-xl">
+                <h3 class="text-lg font-bold mb-3 text-slate-800">
+                  Areas of Expertise
+                </h3>
+                <ul class="space-y-2 text-slate-600">
+                  <li>• Product Management & Strategy</li>
+                  <li>• AI-Enabled Decision Systems</li>
+                  <li>• Data Analytics & Insights</li>
+                  <li>• Enterprise Scale Solutions</li>
+                  <li>• Cross-Functional Leadership</li>
+                </ul>
+              </div>
+
+              <div class="card-hover bg-slate-50 p-6 rounded-xl">
+                <h3 class="text-lg font-bold mb-3 text-slate-800">
+                  Response Time
+                </h3>
+                <p class="text-slate-600">
+                  I typically respond within 24 hours for professional inquiries
+                  and look forward to meaningful conversations about potential
+                  collaborations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="card-hover bg-gradient-to-r from-blue-600 to-emerald-600 text-white p-8 rounded-2xl"
+            >
+              <h3 class="text-2xl font-bold mb-6">Get In Touch</h3>
+              <div class="space-y-4">
+                <div class="flex items-center">
+                  <i class="fas fa-envelope mr-3"></i>
+                  <span>Twilliams614@yahoo.com</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-phone mr-3"></i>
+                  <span>870-849-2931</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fab fa-linkedin mr-3"></i>
+                  <span>linkedin.com/in/traviswilliams614</span>
+                </div>
+              </div>
+
+              <div class="mt-6 space-y-3">
+                <a
+                  href="mailto:Twilliams614@yahoo.com"
+                  class="block w-full bg-white text-blue-600 text-center py-3 rounded-lg hover:bg-blue-50 transition-colors"
+                >
+                  <i class="fas fa-envelope mr-2"></i>
+                  Send Email
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/traviswilliams614"
+                  target="_blank"
+                  class="block w-full bg-white text-blue-600 text-center py-3 rounded-lg hover:bg-blue-50 transition-colors"
+                >
+                  <i class="fab fa-linkedin mr-2"></i>
+                  Connect on LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <p class="text-slate-500">
+            &copy; 2026 Travis Williams. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

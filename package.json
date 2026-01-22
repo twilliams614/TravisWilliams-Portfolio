@@ -1,0 +1,21 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "A business-savvy personal website for Travis Williams - Product Management Professional",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000",
+    "build": "echo 'Build complete'",
+    "start": "live-server --port=3000"
+  },
+  "keywords": [
+    "personal",
+    "website",
+    "portfolio",
+    "product-management",
+    "business"
+  ],
+  "author": "Travis Williams",
+  "license": "MIT",
+  "devDependencies": { "live-server": "^1.2.2" }
+}

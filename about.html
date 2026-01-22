@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Travis Williams | Product Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      .gradient-text {
+        background: linear-gradient(135deg, #1e40af, #3b82f6, #60a5fa);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px rgba(30, 64, 175, 0.1);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50">
+    <nav class="bg-white border-b border-slate-200 fixed w-full z-50">
+      <div class="max-w-6xl mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <span class="text-xl font-bold gradient-text">Travis Williams</span>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="index.html"
+              class="text-slate-600 hover:text-blue-600 transition-colors"
+              >Home</a
+            >
+            <a href="about.html" class="text-blue-600 font-medium">About</a>
+            <a
+              href="experience.html"
+              class="text-slate-600 hover:text-blue-600 transition-colors"
+              >Experience</a
+            >
+            <a
+              href="skills.html"
+              class="text-slate-600 hover:text-blue-600 transition-colors"
+              >Skills</a
+            >
+            <a
+              href="leadership.html"
+              class="text-slate-600 hover:text-blue-600 transition-colors"
+              >Leadership</a
+            >
+            <a
+              href="contact.html"
+              class="text-slate-600 hover:text-blue-600 transition-colors"
+              >Contact</a
+            >
+          </div>
+          <div class="md:hidden">
+            <button class="text-slate-600">
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-12">
+          <div class="md:col-span-2">
+            <h2 class="text-4xl font-bold mb-6 gradient-text">About Me</h2>
+            <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+              As a Product Manager and Quality Driven Management Expert at FedEx
+              Freight, I lead data-driven, AI-adjacent product initiatives
+              focused on digital modernization, automation, and
+              analytics-enabled decision support.
+            </p>
+            <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+              I partner closely with engineering teams, platform services, and
+              business stakeholders to translate complex systems, data
+              pipelines, and operational insights into shippable, measurable
+              product capabilities. I bring over 16 years of experience
+              delivering enterprise-scale solutions that improve visibility,
+              performance, and outcomes across highly regulated,
+              mission-critical environments.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8 mt-12">
+              <div class="card-hover bg-slate-50 p-6 rounded-xl">
+                <div class="text-blue-600 mb-4">
+                  <i class="fas fa-brain text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-slate-800">
+                  AI-Driven Products
+                </h3>
+                <p class="text-slate-600">
+                  Leading data-driven, AI-adjacent product initiatives focused
+                  on digital modernization and automation
+                </p>
+              </div>
+              <div class="card-hover bg-slate-50 p-6 rounded-xl">
+                <div class="text-blue-600 mb-4">
+                  <i class="fas fa-chart-line text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-slate-800">
+                  Enterprise Scale
+                </h3>
+                <p class="text-slate-600">
+                  Delivering solutions across mission-critical environments with
+                  measurable business impact
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="card-hover bg-blue-600 text-white p-8 rounded-2xl sticky top-24"
+            >
+              <h3 class="text-2xl font-bold mb-6">Contact</h3>
+              <div class="space-y-4">
+                <div class="flex items-center">
+                  <i class="fas fa-envelope mr-3"></i>
+                  <span>Twilliams614@yahoo.com</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-phone mr-3"></i>
+                  <span>870-849-2931</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fab fa-linkedin mr-3"></i>
+                  <span>linkedin.com/in/traviswilliams614</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
